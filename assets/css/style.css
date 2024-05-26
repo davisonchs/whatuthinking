@@ -1,0 +1,8 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dark {
+    background-color: rgb(41, 74, 84);
+    color: white;
+}

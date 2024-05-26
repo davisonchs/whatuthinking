@@ -21,3 +21,33 @@ function submitpost(newPost) {
     localStorage.setItem("posts", JSON.stringify(parsedLocalStoragePosts))
 
 }
+
+function renderTheme() {
+   const bodyEl = document.querySelector('body')
+   const darkTheme = localStorage.getItem('darkTheme')
+
+   if (darkTheme === "true") {
+    bodyEl.classList.add('dark')
+   }
+}
+
+
+function switchTheme() {
+   const darkTheme = localStorage.getItem('darkTheme')
+
+   const bodyEl = document.querySelector('body')
+   if (darkTheme === null || darkTheme === "false") {
+    localStorage.setItem('darkTheme', "true")
+    bodyEl.classList.add('dark') 
+   } else {
+    localStorage.setItem('darktheme', "false")
+    bodyEl.classList.remove('dark')
+   }
+
+}
+
+const switchThemeButtonEl = document.querySelector('#switch-theme')
+
+switchThemeButtonEl.addEventListener('click', switchTheme)
+
+renderTheme()
