@@ -40,7 +40,7 @@ function switchTheme() {
     localStorage.setItem('darkTheme', "true")
     bodyEl.classList.add('dark') 
    } else {
-    localStorage.setItem('darktheme', "false")
+    localStorage.setItem('darkTheme', "false")
     bodyEl.classList.remove('dark')
    }
 

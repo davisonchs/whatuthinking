@@ -15,3 +15,13 @@ button{
 body {
     text-decoration: underline;
 }
+
+#switch-theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+footer {
+    text-align: center;
+}
