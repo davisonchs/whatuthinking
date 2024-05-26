@@ -5,6 +5,8 @@ const posts = getAllPosts()
 for (const post of posts) {
 
     const postEl = document.createElement('div')
+    postEl.classList.add('post')
+
     const postTitleEl = document.createElement('h2')
     const postContentEl = document.createElement('p')
     const postUsernameEl = document.createElement('p')
